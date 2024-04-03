@@ -1,19 +1,45 @@
 import java.util.Scanner;
 
 public class Exer7 {
-
     public static void main(String[] args) {
-
         Scanner in = new Scanner(System.in);
-        String reverso = "";
 
-        System.out.println("Digite um número");
-        String numero = in.next();
+        int numero = in.nextInt();
 
-        for (int i = (numero.length() - 1); i >= 0; i--) {
-            reverso += numero.charAt(i);
-        }
+        int ultDigito, invertido; 
+        System.out.println("informe o numero para inverter");
+        // DICA: COMO PEGAR O ÚLTIMO DIGITO?
+        // 1234     4
 
-        System.out.println("o reverso do número é: " + reverso);
+        ultDigito = numero % 10;
+        invertido = ultDigito;
+
+        numero = numero / 10;
+
+        System.out.println("INVERTIDO " + invertido);
+        System.out.println("NUMERO " + numero);
+
+
+        ultDigito = numero % 10;
+        invertido = invertido * 10 + ultDigito;
+        numero = numero / 10;
+
+        System.out.println("INVERTIDO " + invertido);
+        System.out.println("NUMERO " + numero);
+
+        ultDigito = numero % 10;
+        invertido = invertido * 10 + ultDigito;
+        numero = numero / 10;
+
+        System.out.println("INVERTIDO " + invertido);
+        System.out.println("NUMERO " + numero);
+
+        ultDigito = numero % 10;
+        invertido = invertido * 10 + ultDigito;
+        numero = numero / 10;
+
+        System.out.println("INVERTIDO " + invertido);
+        System.out.println("NUMERO " + numero);
+
     }
 }

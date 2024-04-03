@@ -16,7 +16,7 @@ public class Ex5 {
         saque3 = resto % nota2;
         saquetotal = saque3 / nota1;
 
-        System.out.printf("a quantidade de notas é:%d de %d  %d de %d  %d de %d", saque1, nota3, saque2, nota2,
+        System.out.printf("a quantidade de notas é:%d X %d  %d X %d  %d X %d", saque1, nota3, saque2, nota2,
                 saquetotal, nota1);
 
     }
